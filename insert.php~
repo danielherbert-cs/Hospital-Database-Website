@@ -1,0 +1,54 @@
+<?php
+  include "connectdb.php"
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="webpage.css">
+</head>
+<body>
+<h1 align="center">Insert A New Doctor Into The Database</h1>
+<form>
+  <label for="licensenum">License Number:</label><br>
+  <input type="text" id="licensenum" name="lnum"><br><br>  
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>  
+
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <label for="ldate">License Date (YYYY-MM-DD):</label><br>
+  <input type="text" id="ldate" name="ldate"><br><br>
+
+  <label for="bdate">Birthate (YYYY-MM-DD):</label><br>
+  <input type="text" id="bdate" name="bdate"><br><br>
+  
+  <P>Select a specialty: </p>
+  <input type="radio" id="pod" name="spec" value="Podiatrist">
+  <label for="pod">Podiatrist</label><br>
+  <input type="radio" id="sur" name="spec" value="Surgeon">
+  <label for="sur">Surgeon</label><br>
+  <input type="radio" id="uro" name="spec" value="Urologist">
+  <label for="uro">Urologist</label><br>
+  <input type="radio" id="fdoc" name="spec" value="Family Doctor">
+  <label for="fdoc">Family Doctor</label><br>
+  <input type="radio" id="ped" name="spec" value="Pediatrician">
+  <label for="ped">Pediatrician</label><br>
+  <input type="radio" id="card" name="spec" value="Cardiologist">
+  <label for="card">Cardiologist</label><br>
+  <input type="radio" id="onc" name="spec" value="Oncologist">
+  <label for="onc">Oncologist</label><br>
+  <input type="radio" id="psych" name="spec" value="Psychiatrist">
+  <label for="psych">Psychiatrist</label><br>
+  <input type="radio" id="rad" name="spec" value="Radiologist">
+  <label for="rad">Radiologist</label><br>
+  <input type="radio" id="neph" name="spec" value="Nephrologist">
+  <label for="neph">Nephrologist</label><br>  
+
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
